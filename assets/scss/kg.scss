@@ -1,0 +1,95 @@
+//Nuancier
+$C1:rgb(0, 110, 255);
+$C2:rgb(230, 230, 230);
+$C3:rgb(24, 41, 58);
+$C4:rgb(0, 128, 255);
+//Les polices d'écriture
+@import url('https://fonts.googleapis.com/css?family=Anton');
+@import url('https://fonts.googleapis.com/css?family=Monda');
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+//Set des éléments
+body {
+    font-family: 'Monda', sans-serif;
+    color: $C3;
+}
+
+kbd {
+    background-color: #eee;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+    color: #333;
+    display: inline-block;
+    font-size: .85em;
+    font-weight: 700;
+    line-height: 1;
+    padding: 2px 4px;
+    white-space: nowrap;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Anton', sans-serif;
+    color: $C4;
+    border-bottom: solid $C3 1px;
+    text-shadow: $C3 0 1px 0;
+}
+
+h1 {
+    text-align: center
+}
+
+blockquote,
+cite,
+legend,
+dialog {
+    font-family: 'Tangerine', cursive;
+}
+
+ul {
+    list-style-type: none;
+    li {
+        &::before {
+            content: "►";
+        }
+    }
+}
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $C3;
+    height: 10%;
+}
+
+footer {
+    color: $C2;
+    display: block;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: $C3;
+    height: 12%;
+    column-gap: 30%;
+    column-count: 3;
+    ul {
+        li {
+            display: inline;
+            font-size: 100%;
+            &::before {
+                content: " ";
+            }
+            a {
+                display: block;
+                &:link {
+                    color: $C2;
+                }
+            }
+        }
+    }
+}
