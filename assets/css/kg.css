@@ -43,27 +43,27 @@ header .kidpaddleetcieglin {
   font-size: 2em;
 }
 
-section {
+main {
   text-align: center;
   margin-top: 75px;
   margin-bottom: 75px;
 }
 
-section h1,
-section h2,
-section h3 {
+main h1,
+main h2,
+main h3 {
   color: #006eff;
 }
 
-section h1::after,
-section h2::after,
-section h3::after {
+main h1::after,
+main h2::after,
+main h3::after {
   content: "|";
 }
 
-section h1::before,
-section h2::before,
-section h3::before {
+main h1::before,
+main h2::before,
+main h3::before {
   content: "|";
 }
 
