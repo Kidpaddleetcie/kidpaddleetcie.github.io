@@ -27,22 +27,6 @@ kbd {
     white-space: nowrap;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Anton', sans-serif;
-    color: $C4;
-    border-bottom: solid $C3 1px;
-    text-shadow: $C3 0 1px 0;
-}
-
-h1 {
-    text-align: center
-}
-
 blockquote,
 cite,
 legend,
@@ -52,42 +36,63 @@ dialog {
 
 ul {
     list-style-type: none;
-    li {
+}
+
+header {
+    background-color: $C3;
+    .kidpaddleetcieglin {
+        font-family: 'Anton', sans-serif;
+        color: $C4;
+        text-shadow: $C3 0 1px 0;
+        font-size: 2em;
+    }
+}
+
+section {
+    text-align: center;
+    margin-top: 75px;
+    margin-bottom: 75px;
+    h1,
+    h2,
+    h3 {
+        color: $C1;
+        &::after {
+            content: "|"
+        }
         &::before {
-            content: "►";
+            content: "|"
         }
     }
 }
 
-header {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    background-color: $C3;
-    height: 10%;
-}
-
 footer {
-    color: $C2;
-    display: block;
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    background-color: $C3;
-    height: 12%;
-    column-gap: 30%;
-    column-count: 3;
-    ul {
-        li {
-            display: inline;
-            font-size: 100%;
-            &::before {
-                content: " ";
-            }
-            a {
-                display: block;
-                &:link {
-                    color: $C2;
+    nav {
+        background-color: $C3;
+        ul {
+            li {
+                &::before {
+                    content: " ";
+                }
+                &:hover {
+                    background-color: $C3;
+                    color: white !important;
+                    a {
+                        background-color: $C3;
+                        color: white !important;
+                    }
+                }
+                a {
+                    letter-spacing: 1px;
+                    color: $C3 !important;
+                    &:link {
+                        color: $C1 !important;
+                        text-decoration: none;
+                    }
+                    i {
+                         ::after {
+                            content: "  ";
+                        }
+                    }
                 }
             }
         }
