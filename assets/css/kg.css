@@ -66,32 +66,20 @@ header li:hover a {
   text-decoration: none;
 }
 
+@media screen and (orientation: landscape) {
+  main aside {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
 main {
   text-align: center;
 }
 
-main h1,
-main h2,
-main h3 {
-  color: #006eff;
-}
-
-main h1::after,
-main h2::after,
-main h3::after {
-  content: "|";
-}
-
-main h1::before,
-main h2::before,
-main h3::before {
-  content: "|";
-}
-
 @media screen and (orientation: portrait) {
-  main h1 button,
-  main h2 button,
-  main h3 button {
+  main button {
     padding-left: 0 !important;
     font-size: 0.8rem !important;
   }

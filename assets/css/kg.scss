@@ -68,23 +68,20 @@ header {
     }
 }
 
+@media screen and (orientation: landscape) {
+    main {
+        aside {
+            display: flex!important;
+        }
+    }
+}
+
 main {
     text-align: center;
-    h1,
-    h2,
-    h3 {
-        color: $C1;
-        &::after {
-            content: "|"
-        }
-        &::before {
-            content: "|"
-        }
-        @media screen and (orientation: portrait) {
-            button {
-                padding-left: 0 !important;
-                font-size: 0.8rem !important;
-            }
+    @media screen and (orientation: portrait) {
+        button {
+            padding-left: 0 !important;
+            font-size: 0.8rem !important;
         }
     }
 }
