@@ -71,17 +71,9 @@ header li:hover a {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
     display: flex !important;
-  }
-}
-
-main {
-  text-align: center;
-}
-
-@media screen and (orientation: portrait) {
-  main button {
-    padding-left: 0 !important;
-    font-size: 0.8rem !important;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 

@@ -72,16 +72,7 @@ header {
     main {
         aside {
             display: flex!important;
-        }
-    }
-}
-
-main {
-    text-align: center;
-    @media screen and (orientation: portrait) {
-        button {
-            padding-left: 0 !important;
-            font-size: 0.8rem !important;
+            justify-content: center;
         }
     }
 }
