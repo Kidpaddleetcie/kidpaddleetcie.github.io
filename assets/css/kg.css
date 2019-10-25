@@ -116,4 +116,20 @@ footer nav ul li a:link {
 footer nav ul li a i ::after {
   content: "  ";
 }
+
+.yt-username {
+  widows: 200px !important;
+  text-overflow: ellipsis !important;
+}
+
+.yt-uix-button-subscribe-branded {
+  background-color: #18293a;
+}
+
+.yt-uix-button-subscribe-branded::before {
+  background: no-repeat url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89b8e4ba-2c52-44b5-b4c6-963c82fe1812/dckbn9d-c0ed27d8-ec69-4c5b-b0be-6a8791fd3943.jpg/v1/fill/w_1024,h_685,q_75,strp/glin_sort_du_noire_2_by_kidpaddleetcie_dckbn9d-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njg1IiwicGF0aCI6IlwvZlwvODliOGU0YmEtMmM1Mi00NGI1LWI0YzYtOTYzYzgyZmUxODEyXC9kY2tibjlkLWMwZWQyN2Q4LWVjNjktNGM1Yi1iMGJlLTZhODc5MWZkMzk0My5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7GLiln9KxxNKrxxCtKKZI_IPiWE4UDOGzXk4ffcXafs) !important;
+  background-size: 571px 360px;
+  width: 16px;
+  height: 12px;
+}
 /*# sourceMappingURL=kg.css.map */
