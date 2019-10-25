@@ -46,17 +46,30 @@ header {
         text-shadow: $C3 0 1px 0;
         font-size: 2em;
     }
+    li {
+        transition: 0.2s padding-bottom;
+        width: 10vw;
+        text-align: center;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+        @media screen and (orientation: portrait) {
+            a {
+                span {
+                    display: none;
+                }
+            }
+        }
+        &:hover {
+            padding-bottom: 5px;
+            a {
+                text-decoration: none;
+            }
+        }
+    }
 }
 
 main {
     text-align: center;
-    margin-top: 75px;
-    @media (orientation: landscape) {
-        margin-bottom: 150px;
-    }
-    @media (orientation: portrait) {
-        margin-bottom: 200px;
-    }
     h1,
     h2,
     h3 {
@@ -67,61 +80,43 @@ main {
         &::before {
             content: "|"
         }
-    }
-    #yt-subscribe,
-    #yt-subscribe_1,
-    #yt-subscribe_2,
-    #yt-subscribe_3 {
-        padding: 1v 1vh;
-    }
-}
-
-footer {
-    nav {
-        background-color: $C3;
-        ul {
-            li {
-                &::before {
-                    content: " ";
-                }
-                &:hover {
-                    background-color: $C3;
-                    color: white !important;
-                    a {
-                        background-color: $C3;
-                        color: white !important;
-                    }
-                }
-                a {
-                    letter-spacing: 1px;
-                    color: $C3 !important;
-                    &:link {
-                        color: $C1 !important;
-                        text-decoration: none;
-                    }
-                    i {
-                         ::after {
-                            content: "  ";
-                        }
-                    }
-                }
+        @media screen and (orientation: portrait) {
+            button {
+                padding-left: 0 !important;
+                font-size: 0.8rem !important;
             }
         }
     }
 }
 
-// Pour les abonnements
-.yt-username {
-    widows: 200px !important;
-    text-overflow: ellipsis !important;
+[aria-expanded="false"] {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    width: 100%;
+    background: rgb(0, 123, 255);
+    background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 123, 255, 1) 100%);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border: solid 1px grey;
+    color: $C1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: $C1;
+    font-weight: bold;
 }
 
-.yt-uix-button-subscribe-branded {
-    background-color: $C3;
-    &::before {
-        background: no-repeat url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/89b8e4ba-2c52-44b5-b4c6-963c82fe1812/dckbn9d-c0ed27d8-ec69-4c5b-b0be-6a8791fd3943.jpg/v1/fill/w_1024,h_685,q_75,strp/glin_sort_du_noire_2_by_kidpaddleetcie_dckbn9d-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njg1IiwicGF0aCI6IlwvZlwvODliOGU0YmEtMmM1Mi00NGI1LWI0YzYtOTYzYzgyZmUxODEyXC9kY2tibjlkLWMwZWQyN2Q4LWVjNjktNGM1Yi1iMGJlLTZhODc5MWZkMzk0My5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.7GLiln9KxxNKrxxCtKKZI_IPiWE4UDOGzXk4ffcXafs)!important;
-        background-size: 571px 360px;
-        width: 16px;
-        height: 12px;
-    }
+[aria-expanded="true"] {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    width: 100%;
+    background: rgb(0, 123, 255);
+    background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    border: solid 1px grey;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white;
+    font-weight: bold;
 }
