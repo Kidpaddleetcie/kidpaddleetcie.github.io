@@ -46,7 +46,18 @@ header .kidpaddleetcieglin {
 main {
   text-align: center;
   margin-top: 75px;
-  margin-bottom: 75px;
+}
+
+@media (orientation: landscape) {
+  main {
+    margin-bottom: 150px;
+  }
+}
+
+@media (orientation: portrait) {
+  main {
+    margin-bottom: 200px;
+  }
 }
 
 main h1,
