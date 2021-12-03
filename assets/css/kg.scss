@@ -9,102 +9,27 @@ $C4:rgb(0, 128, 255);
 @import url('https://fonts.googleapis.com/css?family=Tangerine');
 //Set des éléments
 body {
-    font-family: 'Monda', sans-serif;
-    color: $C3;
-}
-
-kbd {
-    background-color: #eee;
-    border-radius: 3px;
-    border: 1px solid #b4b4b4;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
-    color: #333;
-    display: inline-block;
-    font-size: .85em;
-    font-weight: 700;
-    line-height: 1;
-    padding: 2px 4px;
-    white-space: nowrap;
-}
-
-blockquote,
-cite,
-legend,
-dialog {
-    font-family: 'Tangerine', cursive;
-}
-
-ul {
-    list-style-type: none;
-}
-
-header {
     background-color: $C3;
-    .kidpaddleetcieglin {
-        font-family: 'Anton', sans-serif;
-        color: $C4;
-        text-shadow: $C3 0 1px 0;
-        font-size: 2em;
-    }
-    li {
-        transition: 0.2s padding-bottom;
-        width: 10vw;
-        text-align: center;
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-        @media screen and (orientation: portrait) {
-            a {
-                span {
-                    display: none;
-                }
-            }
-        }
-        &:hover {
-            padding-bottom: 5px;
-            a {
-                text-decoration: none;
-            }
-        }
-    }
+    color: $C2;
 }
 
-@media screen and (orientation: landscape) {
-    main {
-        aside {
-            display: flex!important;
+main {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    section {
+        border: $C4 solid 2px;
+        border-radius: 10%;
+        padding: 20px;
+        flex-grow: 8;
+        box-shadow: 0 .125rem .25rem rgba(0, 0, 0, 0.596)!important;
+        a {
             justify-content: center;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
         }
     }
-}
-
-[aria-expanded="false"] {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    width: 100%;
-    background: rgb(0, 123, 255);
-    background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(255, 255, 255, 1) 50%, rgba(0, 123, 255, 1) 100%);
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    border: solid 1px grey;
-    color: $C1;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: $C1;
-    font-weight: bold;
-}
-
-[aria-expanded="true"] {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    width: 100%;
-    background: rgb(0, 123, 255);
-    background: linear-gradient(180deg, rgba(0, 123, 255, 1) 0%, rgba(0, 123, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
-    border: 1px solid transparent;
-    border-radius: .25rem;
-    border: solid 1px grey;
-    color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: white;
-    font-weight: bold;
 }

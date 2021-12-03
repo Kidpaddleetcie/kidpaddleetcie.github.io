@@ -2,112 +2,44 @@
 @import url("https://fonts.googleapis.com/css?family=Monda");
 @import url("https://fonts.googleapis.com/css?family=Tangerine");
 body {
-  font-family: 'Monda', sans-serif;
-  color: #18293a;
-}
-
-kbd {
-  background-color: #eee;
-  border-radius: 3px;
-  border: 1px solid #b4b4b4;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2), 0 2px 0 0 rgba(255, 255, 255, 0.7) inset;
-  color: #333;
-  display: inline-block;
-  font-size: .85em;
-  font-weight: 700;
-  line-height: 1;
-  padding: 2px 4px;
-  white-space: nowrap;
-}
-
-blockquote,
-cite,
-legend,
-dialog {
-  font-family: 'Tangerine', cursive;
-}
-
-ul {
-  list-style-type: none;
-}
-
-header {
   background-color: #18293a;
+  color: #e6e6e6;
 }
 
-header .kidpaddleetcieglin {
-  font-family: 'Anton', sans-serif;
-  color: #0080ff;
-  text-shadow: #18293a 0 1px 0;
-  font-size: 2em;
-}
-
-header li {
-  -webkit-transition: 0.2s padding-bottom;
-  transition: 0.2s padding-bottom;
-  width: 10vw;
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-align: center;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
 }
 
-@media screen and (orientation: portrait) {
-  header li a span {
-    display: none;
-  }
+main section {
+  border: #0080ff solid 2px;
+  border-radius: 10%;
+  padding: 20px;
+  -webkit-box-flex: 8;
+      -ms-flex-positive: 8;
+          flex-grow: 8;
+  -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.596) !important;
+          box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.596) !important;
 }
 
-header li:hover {
-  padding-bottom: 5px;
-}
-
-header li:hover a {
-  text-decoration: none;
-}
-
-@media screen and (orientation: landscape) {
-  main aside {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-[aria-expanded="false"] {
-  padding: .25rem .75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  width: 100%;
-  background: #007bff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#007bff), color-stop(50%, white), to(#007bff));
-  background: linear-gradient(180deg, #007bff 0%, white 50%, #007bff 100%);
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  border: solid 1px grey;
-  color: #006eff;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: #006eff;
-  font-weight: bold;
-}
-
-[aria-expanded="true"] {
-  padding: .25rem .75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  width: 100%;
-  background: #007bff;
-  background: -webkit-gradient(linear, left top, left bottom, from(#007bff), color-stop(50%, #007bff), to(white));
-  background: linear-gradient(180deg, #007bff 0%, #007bff 50%, white 100%);
-  border: 1px solid transparent;
-  border-radius: .25rem;
-  border: solid 1px grey;
-  color: white;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  font-weight: bold;
+main section a {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 /*# sourceMappingURL=kg.css.map */
