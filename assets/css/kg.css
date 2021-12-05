@@ -58,4 +58,26 @@ main section .inline_yt {
   display: inline;
   width: 100%;
 }
+
+main section button {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  font-size: 1.5em !important;
+}
+
+main section .collapse a:hover:before {
+  content: ">";
+}
+
+main section .collapse a:hover:after {
+  content: "<";
+}
 /*# sourceMappingURL=kg.css.map */
