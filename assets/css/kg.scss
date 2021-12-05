@@ -32,8 +32,9 @@ main {
             display: flex;
             justify-content: space-around;
         }
-        div {
+        .inline_yt {
             display: inline;
+            width: 100%;
         }
     }
 }

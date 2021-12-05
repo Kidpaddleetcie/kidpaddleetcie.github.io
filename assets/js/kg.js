@@ -54,6 +54,6 @@ let yt = " ";
 
 for (let i = 0; i < yt_list.length; i++) {
     let ytl = yt_list[i];
-    yt += '<div class="g-ytsubscribe" data-channelid="' + ytl + '" data-layout="full" data-theme="dark" data-count="default"></div>';
+    yt += '<div class="inline_yt"><div class="g-ytsubscribe" data-channelid="' + ytl + '" data-layout="full" data-theme="dark" data-count="default"></div></div>';
 }
 document.getElementById("yt").innerHTML = yt;

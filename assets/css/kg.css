@@ -44,7 +44,8 @@ main section a {
       justify-content: space-around;
 }
 
-main section div {
+main section .inline_yt {
   display: inline;
+  width: 100%;
 }
 /*# sourceMappingURL=kg.css.map */
