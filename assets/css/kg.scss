@@ -32,6 +32,10 @@ main {
             display: flex;
             justify-content: space-around;
         }
+        #yt {
+            display: flex;
+            flex-direction: column;
+        }
         .inline_yt {
             display: inline;
             width: 100%;
