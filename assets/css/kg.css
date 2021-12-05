@@ -43,4 +43,8 @@ main section a {
   -ms-flex-pack: distribute;
       justify-content: space-around;
 }
+
+main section div {
+  display: inline;
+}
 /*# sourceMappingURL=kg.css.map */
