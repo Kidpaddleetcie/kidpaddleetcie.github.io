@@ -6,6 +6,10 @@ body {
   color: #e6e6e6;
 }
 
+h2 {
+  font-family: Monda;
+}
+
 main {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -28,23 +32,60 @@ main section {
   -webkit-box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.596) !important;
           box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.596) !important;
   background-color: #111d29;
-}
-
-main section a {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  background-color: #008cff;
+  height: auto;
+  padding: 15px;
+  gap: 5px;
 }
 
-main section #yt {
+main section:first-child {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section a {
+  background: #006eff;
+  border: 3px solid #003cff;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+}
+
+main section a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.video {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video object {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,30 +95,38 @@ main section #yt {
           flex-direction: column;
 }
 
-main section .inline_yt {
-  display: inline;
-  width: 100%;
+aside h2 {
+  display: inline-block;
 }
 
-main section button {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  font-size: 1.5em !important;
+aside a {
+  background: #006eff;
+  border: 3px solid #003cff;
+  border-radius: 5px;
+  padding: 8px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.5em;
+  font-family: Anton;
+  letter-spacing: 5px;
 }
 
-main section .collapse a:hover:before {
-  content: ">";
+aside a p {
+  font-size: 0.8em;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 2px black;
+  color: black;
+  padding: 10px;
 }
 
-main section .collapse a:hover:after {
-  content: "<";
+aside a:hover {
+  color: black;
+}
+
+aside a:hover p {
+  border: solid 2px white;
+  text-decoration: none;
+  color: white;
 }
 /*# sourceMappingURL=kg.css.map */
